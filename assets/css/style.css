@@ -1,0 +1,90 @@
+/* config */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+/* global */
+body{
+    background-color: white;
+}
+p,li{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+}
+/* global :end */
+
+/* header start */
+
+.top-header{
+    background-color: #4c0034;
+    color: white;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    display: block;
+}
+.logo img{
+    width: 200px;
+    padding: 10px;
+}
+.nav-1{
+    display: block;
+    width: 300px;
+    text-align: center;
+    /* position:relative; */
+}
+.nav-1 ul{
+    display: inline-flex;
+    list-style: none;
+    /* margin: 0; */
+   padding:0;
+   /* justify-content: space-between; */
+
+}
+.nav-1 ul>li{
+    padding: 14px 5px 11px 5px;
+
+}
+.nav-2{
+    width: 200px;
+}
+.nav-2 ul{
+    text-align: right;
+    display: inline-flex;
+    list-style: none;
+}
+.nav-2 ul>li{
+    padding-left: 20px;
+
+}
+
+
+
+
+/* header end  */
+/* hero banner start  */
+.hero-banner{
+background-color: wheat;
+background-image: url(/assets/images/Fresh_Chemistry_Blake_Orange_HomepageTest_2700x.jpg);
+min-height: 70vh;
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: center;
+background-size: cover;
+}
+.hero-text{
+   font-size: 52px;
+}
+.highlight-color{
+    color: red;
+}
