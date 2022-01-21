@@ -1,90 +1,254 @@
 /* config */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+/* variable definition */
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --fc-red: #f9435c;
+    --fc-purple: #4c0034;
+    --fc-black: black;
+    --fc-light-grey: #f5f5f5;
+}
+
+
 /* global */
-body{
+
+body {
     background-color: white;
 }
-p,li{
+
+p,
+li {
     font-family: 'Poppins', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif;
     font-weight: normal;
 }
+
+
 /* global :end */
+
 
 /* header start */
 
-.top-header{
+.top-header {
     background-color: #4c0034;
     color: white;
     text-align: center;
-    padding-top:5px;
+    padding-top: 5px;
     padding-bottom: 5px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-.logo{
+
+.logo {
     display: block;
 }
-.logo img{
+
+.logo img {
     width: 200px;
     padding: 10px;
 }
-.nav-1{
+
+.nav-1 {
     display: block;
     width: 300px;
     text-align: center;
     /* position:relative; */
 }
-.nav-1 ul{
+
+.nav-1 ul {
     display: inline-flex;
     list-style: none;
     /* margin: 0; */
-   padding:0;
-   /* justify-content: space-between; */
-
+    padding: 0;
+    /* justify-content: space-between; */
 }
-.nav-1 ul>li{
+
+.nav-1 ul>li {
     padding: 14px 5px 11px 5px;
-
 }
-.nav-2{
+
+.nav-2 {
     width: 200px;
 }
-.nav-2 ul{
+
+.nav-2 ul {
     text-align: right;
     display: inline-flex;
     list-style: none;
 }
-.nav-2 ul>li{
+
+.nav-2 ul>li {
     padding-left: 20px;
-
 }
-
-
 
 
 /* header end  */
+
+
 /* hero banner start  */
-.hero-banner{
-background-color: wheat;
-background-image: url(/assets/images/Fresh_Chemistry_Blake_Orange_HomepageTest_2700x.jpg);
-min-height: 70vh;
-background-repeat: no-repeat;
-background-position-x: center;
-background-position-y: center;
-background-size: cover;
+
+.hero-banner {
+    background-color: wheat;
+    background-image: url(/assets/images/Fresh_Chemistry_Blake_Orange_HomepageTest_2700x.jpg);
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
 }
-.hero-text{
-   font-size: 52px;
+
+.hero-text {
+    font-size: 52px;
 }
-.highlight-color{
-    color: red;
+
+.highlight-color-red {
+    color: var(--fc-red);
+}
+
+.highlight-color-purple {
+    color: var(--fc-purple);
+}
+
+.fc-grid {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+.fc-grid-item {
+    /* justify-content: space-around; */
+}
+
+.first-section {
+    align-items: center;
+    justify-items: center;
+}
+
+.fc-btn-solid {
+    border: 2px solid var(--fc-purple);
+    background-color: var(--fc-purple);
+    padding: 14px 28px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fc-btn-solid:hover {
+    border: 2px solid var(--fc-purple);
+    background-color: transparent;
+    padding: 14px 28px;
+    font-size: 16px;
+    color: var(--fc-purple);
+    text-decoration: none;
+}
+
+.fc-btn-outline {
+    border: 2px solid var(--fc-purple);
+    background-color: transparent;
+    padding: 14px 28px;
+    font-size: 16px;
+    color: var(--fc-purple);
+    text-decoration: none;
+}
+
+.fc-btn-outline:hover {
+    border: 2px solid var(--fc-purple);
+    background-color: var(--fc-purple);
+    padding: 14px 28px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fc-section-heading {
+    font-size: 48px;
+    color: var(--fc-purple);
+    text-align: center;
+}
+
+.product-image1 {
+    width: 500px;
+    height: 500px;
+    background: url(/assets/images/Fresh_Chemistry_StillLife_GlowGetter-1_720x.jpg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-image2 {
+    width: 500px;
+    height: 500px;
+    background: url(/assets/images/Fresh_Chemistry_StillLife_WrinkleRelease-1_540x.jpg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-image1:hover {
+    background: url(/assets/images/Fresh_Chemistry_GlowGetter_Pour-1_540x.jpg);
+}
+
+.product-image2:hover {
+    background: url(/assets/images/Fresh_Chemistry_WrinkleRelease_Pour-1_540x.jpg);
+}
+
+.fc-btn-solid-red {
+    border: 2px solid var(--fc-red);
+    background-color: var(--fc-red);
+    padding: 14px 28px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fc-btn-solid-red:hover {
+    border: 2px solid var(--fc-red);
+    background-color: transparent;
+    padding: 14px 28px;
+    font-size: 16px;
+    color: var(--fc-purple);
+    text-decoration: none;
+}
+
+.fc-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-grey-section {
+    background-color: var(--fc-light-grey);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.fc-bold {
+    font-weight: 600;
+}
+
+.product-video {
+    display: flex;
+    justify-content: center;
 }
